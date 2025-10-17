@@ -77,6 +77,15 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+    },
+    'pos_proxy':{
+        "ENGINE": "django.db.backends.postgresql",
+        "HOST": "pos-database.postgres.database.azure.com",
+        "PORT": 5432,
+        "NAME": "ab_pos",
+        "USER": "azureuser",
+        "PASSWORD": "posApnibus@123",
+        "OPTIONS": {"sslmode": "require"},
     }
 }
 
