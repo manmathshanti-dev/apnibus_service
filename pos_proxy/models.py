@@ -119,7 +119,7 @@ class Operator(PosBaseModel):
         managed = False
         db_table = "operators_operator"
 
-class ProxyTrip(Operator):
+class ProxyOperator(Operator):
     class Meta:
         proxy = True
 
